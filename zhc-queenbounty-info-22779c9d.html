@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>赏金女王 · 产品概要</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #faf7f2;
+      color: #2d2a24;
+      line-height: 1.7;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      background-color: #ffffffed;
+      border-radius: 28px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.04);
+      padding: 2.8rem 2.4rem;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 2.2rem;
+      letter-spacing: -0.02em;
+      color: #3d3529;
+      margin-bottom: 0.2rem;
+      border-left: 6px solid #c9a96e;
+      padding-left: 1rem;
+    }
+    .subhead {
+      font-size: 1.05rem;
+      color: #6b6257;
+      margin-bottom: 2.4rem;
+      padding-left: 1.6rem;
+      border-bottom: 1px solid #e5ddd1;
+      padding-bottom: 0.8rem;
+    }
+    .hero-tag {
+      background: #f3ede5;
+      padding: 1.2rem 1.6rem;
+      border-radius: 20px;
+      margin: 1.6rem 0 2.2rem 0;
+      font-size: 1.1rem;
+    }
+    .hero-tag strong {
+      color: #8b6f44;
+      font-weight: 600;
+    }
+    .highlight-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem 1.8rem;
+      margin: 2rem 0 2.4rem;
+    }
+    .highlight-item {
+      flex: 1 1 180px;
+      background: #fcfaf7;
+      padding: 1.2rem 1.2rem 0.8rem;
+      border-radius: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+      border: 1px solid #ede7df;
+    }
+    .highlight-item h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #5b4f3e;
+      margin-bottom: 0.3rem;
+      letter-spacing: 0.02em;
+    }
+    .highlight-item p {
+      font-size: 0.92rem;
+      color: #4f473c;
+    }
+    .use-suggestion {
+      background: #efeae1;
+      border-radius: 20px;
+      padding: 1.6rem 1.8rem;
+      margin: 2rem 0 1.8rem;
+    }
+    .use-suggestion h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #3f372d;
+      margin-bottom: 0.4rem;
+    }
+    .use-suggestion ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .use-suggestion li {
+      padding: 0.4rem 0 0.4rem 1.4rem;
+      position: relative;
+    }
+    .use-suggestion li::before {
+      content: "·";
+      position: absolute;
+      left: 0.2rem;
+      color: #b3956a;
+      font-weight: bold;
+    }
+    .notice-box {
+      background: #f9f4ed;
+      border-left: 5px solid #c4a97e;
+      padding: 1.2rem 1.6rem;
+      border-radius: 0 16px 16px 0;
+      margin: 2rem 0 1.6rem;
+      font-size: 0.98rem;
+    }
+    .notice-box strong {
+      color: #6e5a3f;
+    }
+    .faq-mini {
+      margin: 2.2rem 0 1rem;
+    }
+    .faq-mini h2 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      color: #3a332b;
+    }
+    .faq-mini details {
+      margin-bottom: 0.4rem;
+      border-bottom: 1px dashed #ddd5cb;
+      padding: 0.3rem 0;
+    }
+    .faq-mini summary {
+      cursor: pointer;
+      font-weight: 500;
+      color: #4f4539;
+      padding: 0.2rem 0;
+    }
+    .faq-mini summary::marker {
+      color: #b3956a;
+    }
+    .faq-mini .answer {
+      padding: 0.5rem 0.6rem 0.6rem;
+      color: #3d382f;
+      font-size: 0.95rem;
+    }
+    .inline-link {
+      color: #8b6f44;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #d6c4ac;
+      font-weight: 500;
+    }
+    .inline-link:hover {
+      color: #654b2a;
+      text-decoration-color: #8b6f44;
+    }
+    .footer-note {
+      margin-top: 2.6rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid #e4dbcf;
+      font-size: 0.85rem;
+      color: #7b7165;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 1.6rem; }
+      h1 { font-size: 1.8rem; padding-left: 0.8rem; }
+      .subhead { padding-left: 0.8rem; font-size: 0.95rem; }
+      .highlight-grid { flex-direction: column; gap: 0.8rem; }
+      .highlight-item { flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>赏金女王</h1>
+  <div class="subhead">聚焦产品功能与场景定位 · 快速辨识网站价值</div>
+
+  <div class="hero-tag">
+    <strong>赏金女王</strong> 是一个以“赏金任务 + 角色扮演”为基调的互动平台，用户可在此查看悬赏、派遣委托并体验轻量化剧情推进。网站整体偏向工具型娱乐社区，非游戏客户端，不涉及任何资金交易或博彩内容。
+  </div>
+
+  <!-- 亮点卡片 -->
+  <div class="highlight-grid">
+    <div class="highlight-item">
+      <h3>悬赏看板</h3>
+      <p>每日更新可接取的任务列表，按难度、类型、奖励颗粒度分类，适合快速浏览。</p>
+    </div>
+    <div class="highlight-item">
+      <h3>角色档案</h3>
+      <p>内置女王与随从角色设定，任务对话随进度解锁，形成轻叙事体验。</p>
+    </div>
+    <div class="highlight-item">
+      <h3>委托管理</h3>
+      <p>用户可发布自定义委托（文字描述+条件），其他用户按规则响应，形成闭环。</p>
+    </div>
+  </div>
+
+  <!-- 使用建议 引用块风格 -->
+  <div class="use-suggestion">
+    <h2>使用建议 · 快速上手</h2>
+    <ul>
+      <li>首先浏览「悬赏看板」了解当前任务类型与风格，确认是否匹配个人兴趣。</li>
+      <li>若想参与互动，建议先阅读平台发布的 <a href="https://zhc-queenbounty.com" class="inline-link">赏金女王</a> 行为指引，了解委托与应答的基础规则。</li>
+      <li>角色扮演内容以文字叙事为主，适合喜欢沉浸式阅读与轻策略的用户。</li>
+      <li>网站不提供即时通讯或匹配功能，所有交互通过任务表单与评论形式完成。</li>
+    </ul>
+  </div>
+
+  <!-- 可信但克制的说明 -->
+  <div class="notice-box">
+    <strong>说明：</strong> 本网站不涉及任何金钱交易、虚拟货币、赌博或抽卡机制。所有“赏金”“女王”均为虚构世界观设定下的角色扮演称谓，无任何现实映射。平台不收集敏感个人信息，内容适合成年爱好者交流。若您寻找的是金融、游戏充值或竞技博彩类服务，请离开本页面。
+  </div>
+
+  <!-- FAQ 摘要 -->
+  <div class="faq-mini">
+    <h2>常见疑问 · 快速辨明</h2>
+    <details>
+      <summary>这是一个游戏吗？需要下载客户端吗？</summary>
+      <div class="answer">不是传统意义上的游戏。无需下载，基于浏览器访问即可；部分功能需要注册后使用，但核心看板内容对访客可见。</div>
+    </details>
+    <details>
+      <summary>可以在手机上正常使用吗？</summary>
+      <div class="answer">页面已经适配移动端响应式布局，手机浏览器可以直接访问 <a href="https://zhc-queenbounty.com" class="inline-link">赏金女王</a>，推荐保持系统字体大小默认。</div>
+    </details>
+    <details>
+      <summary>网站有付费项目吗？</summary>
+      <div class="answer">目前无任何付费墙、会员订阅或内购功能。平台所有功能均为免费开放，未来若有变更会以公告形式提前说明。</div>
+    </details>
+  </div>
+
+  <div class="footer-note">
+    — 基于产品说明页 · 内容仅供信息识别 —
+  </div>
+</div>
+</body>
+</html>
